@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* var base = 12;
+var to = 72;
+for (var i = 10; i<=to; i++) {
+	var p = Math.ceil(i/base*100);
+	console.log("$px"+i+":"+p+"%;");
+} */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body, main {
+  height: 100%;
+}
+
+h1, h2, h3, h4, a, small {
+  color: #696969;
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  font-size: 117%;
+}
+
+h2 {
+  font-size: 334%;
+  display: block;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 65px;
+  text-align: center;
+  font-feature-settings: "palt";
+  letter-spacing: 2px;
+}
+
+p {
+  line-height: 1.9;
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  letter-spacing: 4px;
+  color: #696969;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 960px;
+  height: 210px;
+  margin: 0 auto;
+}
+header h1 {
+  position: absolute;
+  top: 120px;
+  font-size: 200%;
+  letter-spacing: 4px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+nav {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  float: left;
+  width: 120px;
+}
+nav ul li a {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 60px;
+  height: 60px;
+  width: 120px;
+  display: block;
+  text-align: center;
+  letter-spacing: 2px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav ul li .nav-now {
+  font-weight: 700;
+  cursor: default;
+}
+nav ul li .nav-now:hover {
+  text-decoration: none;
+}
+
+footer {
+  width: 960px;
+  margin: 0 auto 30px auto;
+  clear: both;
+}
+footer p {
+  text-align: center;
+}
+footer p small {
+  font-size: 60%;
+  color: #ccc;
+}

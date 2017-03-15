@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import "compass";
+@import "partials/base";
+@import "partials/ptp-12";
+@include global-reset;
+
+html, body, main{
+	height: 100%;
+}
+
+h1, h2, h3, h4, a, small{
+	color: $text-color;
+	font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+	font-size: $px14;
+}
+
+h2{
+	font-size: $px40;
+	display: block;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 65px;
+	text-align: center;
+	font-feature-settings : "palt";
+	letter-spacing: 2px;
+}
+
+p{
+	line-height: 1.9;
+	font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+	letter-spacing: 4px;
+	color: $text-color;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	width: 960px;
+	height: 210px;
+	margin: 0 auto;
+	h1{
+		position: absolute;
+		top: 120px;
+		font-size: $px24;
+		letter-spacing: 4px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+	}
+}
+
+nav{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	ul{
+		float: right;
+		li{
+			float: left;
+			width: 120px;
+			a{
+				font-family: 'Lato', sans-serif;
+				font-size: 16px;
+				line-height: 60px;
+				height: 60px;
+				width: 120px;
+				display: block;
+				text-align: center;
+				letter-spacing: 2px;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+			.nav-now{
+				font-weight: 700;
+				cursor: default;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+footer{
+	width: 960px;
+	margin: 0 auto 30px auto;
+  clear: both;
+	p{
+		text-align: center;
+		small{
+			font-size: 60%;
+			color: #ccc;
+		}
+	}
+}

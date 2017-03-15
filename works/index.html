@@ -1,0 +1,108 @@
+<!doctype html>
+
+<!------------------------
+|													|
+|				作品一覧ページ			 |
+|													|
+-------------------------->
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Works - Keisuke Homma</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="../css/works.css">
+	<script src="https://use.fontawesome.com/4f28f6d2c2.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		jQuery(function($){
+			$('body').fadeIn(1000);
+			$(window).on("beforeunload",function(e){
+				$('body').fadeOut();
+			});
+		});
+	</script>
+</head>
+
+<body>
+<script>document.body.style.display = 'none';</script>
+
+<header>
+	<h1>KEISUKE HOMMA</h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="../index.html">About</a></li>
+		<li><a href="#" class="nav-now">Works</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</nav>
+
+<div id="main">
+	<h2>Works</h2>
+	<ul id="works-list">
+		<li>
+			<div class="work-img" style="background-image: url(images/01-1_engineerLog.png);"></div>
+			<a href="#">
+				<h3>エンジニアログ</h3>
+			</a>
+			<p>初心者エンジニアのための学習記録サービスの企画・プロトタイプ・Webサイトデザイン・コーディング・Illustrator・Photoshop・Dreamweaver</p>
+		</li>
+		<li>
+			<div class="work-img" style="background-image: url(images/02-1_minagame.png);"></div>
+			<a href="#">
+				<h3>みながめ</h3>
+			</a>
+			<p>徳島県美波町の独居老人と離れて暮らす家族の問題を「IoTぬいぐるみ」で解決！企画・アプリのUIデザイン・ポスター・動画制作・ロゴ・Illustrator・Photoshop・AfterEffects</p>
+		</li>
+		<li>
+			<div class="work-img" style="background-image: url(images/03-1_iot.jpg);"></div>
+			<a href="#">
+				<h3>スクールバスチェッカー</h3>
+			</a>
+			<p>スクールバスの現在地と到着時刻が分かるWebアプリ。IoT端末Raspberry pi2をバスに設置しバスの位置を取得。Webサーバー上でルートと到着時刻を分析して表示させる。過去の運行状況を再生して再現する機能もある。PHP・Java・JavaScript・Raspberry pi2・AWS・MySQL</p>
+		</li>
+		<li>
+			<div class="work-img"></div>
+			<a href="#">
+				<h3>East Record</h3>
+			</a>
+			<p>EDMフェスの集客の手助けがしたくて20時間で制作したWebサイト。Illustrator・Photoshop・Dreamweaver</p>
+		</li>
+		<li>
+			<div class="work-img"></div>
+			<a href="#">
+				<h3>Keitter</h3>
+			</a>
+			<p>Railsの勉強がてら制作した簡易SNS。Ruby・Rails・Bootstrap</p>
+		</li>
+		<li>
+			<div class="work-img"></div>
+			<a href="#">
+				<h3>Achieve</h3>
+			</a>
+			<p>Railsの勉強がてら制作した簡易SNS。Keitterの強化版で、フォロー機能や画像投稿機能つき。Ruby・Rails・Bootstrap</p>
+		</li>
+		<li>
+			<div class="work-img"></div>
+				<h3>まだまだサイト自体が完成していないので、他の制作物とかは本人が直接見せます(･_･;</h3>
+			<p></p>
+		</li>
+	</ul>
+	
+</div>
+
+<footer>
+	<p>
+		<small>&copy; 2017 Keisuke Homma All Rights Reserved.</small>
+	</p>
+</footer>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+</body>
+</html>

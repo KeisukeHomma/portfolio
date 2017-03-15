@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/* var base = 12;
+var to = 72;
+for (var i = 10; i<=to; i++) {
+	var p = Math.ceil(i/base*100);
+	console.log("$px"+i+":"+p+"%;");
+} */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body, main {
+  height: 100%;
+}
+
+h1, h2, h3, h4, small {
+  color: #696969;
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  font-size: 117%;
+  font-feature-settings: "palt";
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 334%;
+  display: block;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 150%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: #ccc;
+  font-weight: 300;
+}
+
+p {
+  line-height: 1.9;
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  letter-spacing: 4px;
+  color: #696969;
+}
+
+header {
+  width: 960px;
+  height: 270px;
+  margin: 0 auto;
+}
+header h1 {
+  position: absolute;
+  top: 120px;
+  font-size: 200%;
+  letter-spacing: 4px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+nav ul li {
+  float: right;
+}
+nav ul li a {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+#main {
+  display: block;
+}
+
+#main-visual {
+  background: #f9f9f9;
+  height: 420px;
+  margin-bottom: 80px;
+}
+#main-visual #mainVisual-box {
+  width: 960px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#main-visual #mainVisual-box .box-me {
+  height: 420px;
+  min-width: 24px;
+  margin: 0px;
+  display: inline-block;
+  /* non-flexbox browsers */
+  -webkit-flex: 1 0;
+  flex: 1 0;
+}
+#main-visual #mainVisual-box .box-me .box-img {
+  position: relative;
+  display: block;
+  top: 110px;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url(../images/me.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+#main-visual #mainVisual-box .box-content {
+  height: 300px;
+  min-width: 24px;
+  margin: 60px 60px 60px 0;
+  display: inline-block;
+  /* non-flexbox browsers */
+  position: relative;
+  -webkit-flex: 2 0;
+  flex: 2 0;
+  background-image: url(../images/balloon.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+#main-visual #mainVisual-box .box-content .box-text {
+  width: 450px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+#main-visual #mainVisual-box .box-content .box-text p {
+  font-size: 24px;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  vertical-align: middle;
+  /* 「vertical-align」を指定してもテキストは縦方向中央揃いにならない */
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+#main-visual #mainVisual-box .box-content .box-text p span {
+  opacity: 0;
+  min-width: 100%;
+  /* fix for old Firefox */
+}
+
+.section-icon {
+  text-align: center;
+  font-size: 500%;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+.section-text {
+  font-size: 100%;
+  letter-spacing: 1px;
+}
+
+#about {
+  width: 920px;
+  margin: 0 auto 130px auto;
+  clear: both;
+}
+#about #about-box {
+  overflow: hidden;
+}
+#about #about-box section {
+  width: 280px;
+  float: left;
+  margin-right: 40px;
+}
+#about #about-box section:last-child {
+  margin-right: 0;
+}
+
+#skills {
+  width: 920px;
+  margin: 0 auto 130px auto;
+  clear: both;
+}
+#skills #skill-box {
+  width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#skills #skill-box section {
+  width: 280px;
+  float: left;
+}
+#skills #skill-box section:first-child {
+  margin-right: 40px;
+}
+
+footer {
+  width: 960px;
+  margin: 0 auto 30px auto;
+  clear: both;
+}
+footer p {
+  text-align: center;
+}
+footer p small {
+  font-size: 60%;
+  color: #ccc;
+}
