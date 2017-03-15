@@ -47,6 +47,13 @@ for (var i = 10; i<=to; i++) {
   background-position: top center;
   background-size: cover;
 }
+#works-list .work-sorry {
+  width: 100%;
+  height: 198px;
+  border: solid 1px #F0F0F0;
+  line-height: 198px;
+  text-align: center;
+}
 #works-list p {
   font-size: 84%;
   letter-spacing: 1px;
