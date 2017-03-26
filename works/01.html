@@ -1,0 +1,105 @@
+<!doctype html>
+
+<!------------------------
+|													|
+|			作品詳細ページ01			 |
+|													|
+-------------------------->
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>エンジニアログ - Keisuke Homma</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="../css/page.css">
+	<script src="https://use.fontawesome.com/4f28f6d2c2.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		jQuery(function($){
+			$('body').fadeIn(1000);
+			$(window).on("beforeunload",function(e){
+				$('body').fadeOut();
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+<header>
+	<h1>KEISUKE HOMMA</h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="../index.html">About</a></li>
+		<li><a href="index.html" class="nav-now pointer-on">Works</a></li>
+		<li><a href="../contact/index.html">Contact</a></li>
+	</ul>
+</nav>
+
+<div id="work-main-visual" style="background-image: url(images/01-3_engineerLog.png);">
+	<h2>エンジニアログ</h2>
+	<p class="page-description">
+		初心者エンジニアが課題を設定・共有し、課題解決を通して学習していくサービス
+	</p>
+</div>
+
+<article id="work-detail">
+	<h3>使用スキル・技術・ソフト</h3>
+	<ul class="skill-list">
+		<li>企画</li>
+		<li>Webデザイン</li>
+		<li>コーディング</li>
+		<li>プロトタイプ制作</li>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>Experience Design</li>
+		<li>Illustrator</li>
+		<li>Photoshop</li>
+		<li>Dreamweaver</li>
+		<li>PowerPoint</li>
+	</ul>
+	<h3>概要</h3>
+	<p class="description">発表時のスライドです。詳細はこちらのスライドをご覧ください。</p>
+	<object class="pdf-viewer" data="pdf/engineer_log.pdf" type="application/pdf"></object>
+	<figure class="figure-1">
+	<figcaption>他の会員の課題一覧ページ</figcaption>
+		<img src="images/01-3_engineerLog.png">
+	</figure>
+	<figure class="figure-1">
+		<figcaption>課題詳細ページ</figcaption>
+		<img src="images/01-2_engineerLog.png">
+	</figure>
+	<figure class="figure-1">
+		<figcaption>スキルの高いエンジニアが投稿したQiitaなどの記事に影響を受けた初心者エンジニアの一覧</figcaption>
+		<img src="images/01-1_engineerLog.png" alt="エンジニアログ　貢献度検索ページ">
+	</figure>
+	<h3>リンク<i class="fa fa-link" aria-hidden="true"></i></h3>
+	<ul class="link-list">
+		<li><a href="https://damp-spire-77564.herokuapp.com/">サイト版のプロトタイプ（高スキルエンジニア視点）</a></li>
+		<li><a href="https://xd.adobe.com/view/99c84d4d-132f-4106-a2ae-f94ff81bcf23/">XDでのプロトタイプ（初心者エンジニア視点）</a></li>
+		<li><a href="https://xd.adobe.com/view/99c84d4d-132f-4106-a2ae-f94ff81bcf23/">XDでのプロトタイプ（高スキルエンジニア視点）</a></li>
+	</ul>
+</article>
+
+<a href="index.html">
+	<div class="back-button">
+		<i class="fa fa-reply" aria-hidden="true"></i>
+		<p>もどる</p>
+	</div>
+</a>
+
+<footer>
+	<p>
+		<small>&copy; 2017 Keisuke Homma All Rights Reserved.</small>
+	</p>
+</footer>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+</body>
+</html>

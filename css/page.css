@@ -1,9 +1,14 @@
+@charset "UTF-8";
 /* var base = 12;
 var to = 72;
 for (var i = 10; i<=to; i++) {
 	var p = Math.ceil(i/base*100);
 	console.log("$px"+i+":"+p+"%;");
 } */
+.pointer-on:hover {
+  cursor: pointer;
+}
+
 #main {
   width: 920px;
   margin: 0 auto 130px auto;
@@ -13,6 +18,9 @@ for (var i = 10; i<=to; i++) {
   margin-top: 100px;
 }
 
+/*------------------
+　　制作物一覧ページ
+-------------------*/
 #works-list {
   display: -webkit-flex;
   display: flex;
@@ -46,6 +54,24 @@ for (var i = 10; i<=to; i++) {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+#works-list .work-img:hover {
+  -moz-transform: scale(1.08, 1.08);
+  -ms-transform: scale(1.08, 1.08);
+  -webkit-transform: scale(1.08, 1.08);
+  transform: scale(1.08, 1.08);
 }
 #works-list .work-sorry {
   width: 100%;
@@ -61,6 +87,218 @@ for (var i = 10; i<=to; i++) {
   margin: 8px 0 0 2px;
 }
 
+/*------------------
+　　制作物紹介ページ
+-------------------*/
+#work-main-visual {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  /*ブラー効果でボヤけた部分を非表示*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#work-main-visual:before {
+  content: '';
+  background: inherit;
+  /*.bgImageで設定した背景画像を継承する*/
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  /*重なり順序を一番下にしておく*/
+}
+#work-main-visual:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#work-main-visual h2 {
+  margin: 0 auto 0 auto;
+  padding-top: 110px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+}
+#work-main-visual .page-description {
+  margin: 10px 0 60px 0;
+  text-align: center;
+  font-size: 84%;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+}
+
+#work-detail {
+  width: 920px;
+  margin: 0 auto 130px auto;
+  clear: both;
+}
+#work-detail h2 {
+  margin: 100px auto 0 auto;
+}
+#work-detail h3 {
+  font-size: 109%;
+  font-weight: 700;
+  margin: 80px 0 15px 0;
+  clear: both;
+  letter-spacing: 2px;
+  font-feature-settings: "palt";
+}
+#work-detail h3 i {
+  font-size: 84%;
+  margin-left: 2px;
+  color: #ACACAC;
+}
+#work-detail .skill-list {
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+#work-detail .skill-list li {
+  float: left;
+  font-family: 'Lato', '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  color: #696969;
+  font-feature-settings: "palt";
+  letter-spacing: 1px;
+  font-size: 92%;
+  line-height: 1.5;
+}
+#work-detail .skill-list li:after {
+  content: "/";
+  margin: 0 10px;
+}
+#work-detail .skill-list li:last-child:after {
+  content: "";
+}
+#work-detail .summary {
+  font-size: 92%;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+#work-detail figure figcaption {
+  color: #696969;
+  font-size: 92%;
+  line-height: 1.9;
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  letter-spacing: 1px;
+}
+#work-detail figure .figcaption-fixed-3 {
+  height: 82px;
+}
+#work-detail figure img {
+  border: solid 1px #E5E5E5;
+}
+#work-detail figure .border-none {
+  border: none;
+}
+#work-detail .figure-1 {
+  width: 920px;
+  margin-bottom: 80px;
+}
+#work-detail .figure-1 img {
+  width: 100%;
+}
+#work-detail .figure-1 .img-sm {
+  width: 460px;
+}
+#work-detail .figure-2 {
+  float: left;
+  width: 450px;
+  margin: 0 20px 80px 0;
+}
+#work-detail .figure-2 .img-2 {
+  width: 100%;
+  overflow: hidden;
+}
+#work-detail .figure-2 .img-2 img {
+  width: 220px;
+  margin-right: 10px;
+  float: left;
+}
+#work-detail .figure-2 .img-2 img:last-child {
+  margin-right: 0;
+}
+#work-detail .last {
+  margin-right: 0;
+}
+#work-detail .pdf-viewer {
+  width: 100%;
+  height: 600px;
+  border: solid 1px #E5E5E5;
+  margin-bottom: 80px;
+}
+#work-detail .video-viewer {
+  margin-bottom: 80px;
+}
+#work-detail .description {
+  font-size: 92%;
+  letter-spacing: 1px;
+}
+#work-detail .link-list {
+  margin-bottom: 60px;
+}
+#work-detail .link-list li {
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  color: #696969;
+  font-feature-settings: "palt";
+  letter-spacing: 1px;
+  font-size: 92%;
+  line-height: 1.9;
+  position: relative;
+  padding-left: 20px;
+}
+#work-detail .link-list li::before {
+  content: "●";
+  position: absolute;
+  left: 5px;
+}
+#work-detail .link-list li a:hover {
+  text-decoration: underline;
+}
+
+.back-button {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  left: 20px;
+  bottom: 20px;
+  color: #fff;
+}
+.back-button i {
+  position: absolute;
+  left: 23px;
+  top: 18px;
+  font-size: 30px;
+}
+.back-button p {
+  position: absolute;
+  font-size: 8px;
+  color: #fff;
+  top: 48px;
+  left: 22px;
+}
+
+/*------------------
+　　コンタクトページ
+-------------------*/
 #contact-box {
   width: 600px;
   margin: 0 auto 100px auto;

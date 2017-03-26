@@ -61,8 +61,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-html, body, main {
-  height: 100%;
+body {
+  position: relative;
 }
 
 h1, h2, h3, h4, a, small {
@@ -75,7 +75,7 @@ h2 {
   font-size: 334%;
   display: block;
   font-weight: 400;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
   margin-bottom: 65px;
   text-align: center;
   font-feature-settings: "palt";
@@ -91,6 +91,10 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.clear {
+  clear: both;
 }
 
 header {
